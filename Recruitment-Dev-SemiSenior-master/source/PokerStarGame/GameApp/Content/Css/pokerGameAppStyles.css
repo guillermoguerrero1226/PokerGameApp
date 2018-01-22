@@ -1,0 +1,22 @@
+﻿body{
+    background-image:url(../Images/background_poker_table.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#initialMessage{
+    opacity:0.8;
+    background-color:darkseagreen;
+}
+.card {
+  width: 143px;
+  height: 208px;
+}
+#container_cards{
+    margin-top:100px;
+}
+#container_cards #card{
+    margin:10px;
+}
+#buttons{
+    margin-top:100px;
+}

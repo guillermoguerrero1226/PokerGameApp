@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Poker Star Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="Content/Css/pokerGameAppStyles.css" type="text/css" />
+</head>
+<body ng-app="pokerGameApp">
+    <section class="container" ng-controller="pokerGameAppCtrl">
+
+        <section id="initialMessage" class="col-3 align-items-start flex-column" ng-show="show">
+            <h1 class="display-3">Hello!</h1>
+            <p class="lead">This is the new poker's game where you will try your skill and you going to become in the new Poker Star.</p>
+            <hr class="my-4">
+            <button ng-click="starGame()" type="button" class="btn btn-outline-primary ">Play Now</button>
+        </section>
+        <section class="container" ng-show="showTable">
+
+
+            <div class="row " role="alert">
+                <h1 class="text-info">{{message}}</h1>
+            </div>
+
+            <div class="row d-flex justify-content-center" id="container_cards">
+                <div class="" ng-repeat="card in cards" id="card">
+                    <img class="card" src="{{card.back}}" ng-show="backCard" />
+                    <img class="card" src="{{card.front}}" ng-show="frontCard" />
+                </div>
+
+            </div>
+            <!--<div class="row " role="alert">
+                <div class="alert alert-success" role="alert">
+                    <strong>{{initialMessage}}</strong>
+                </div>
+                
+            </div>-->
+            <br />
+            <div id="buttons" class="row d-flex justify-content-center">
+                <div class="mr-auto p-2"><button ng-click="shuffle()" type="button" class=" btn-lg btn-outline-primary ">Shuffle</button></div>
+                <div><button ng-click="showCards()" type="button" class="btn-lg btn-outline-danger ">Show Cards</button></div>
+            </div>
+            <br />
+            <div class="row ">
+                <div class="alert alert-info " role="alert">
+                    <strong>{{resultMessage}}</strong>
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script src="pokerGameAppCtrl.js" type="text/javascript"></script>
+
+</body>
+
+</html>

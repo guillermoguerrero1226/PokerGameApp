@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codifico.SemiSenior", "Codifico.SemiSenior\Codifico.SemiSenior.csproj", "{E7BEEE4C-1F0F-496C-B838-F21352B521F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Help", "Help", "{A4C48062-1193-4D95-AA68-E0D936A2B9B2}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{1F343359-8D97-4FB6-9BD1-B0CF426AF835}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerStarGame", "PokerStarGame\PokerStarGame.csproj", "{25CE3DE0-0F0F-44D3-864B-842CF691E4F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7BEEE4C-1F0F-496C-B838-F21352B521F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7BEEE4C-1F0F-496C-B838-F21352B521F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7BEEE4C-1F0F-496C-B838-F21352B521F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7BEEE4C-1F0F-496C-B838-F21352B521F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CE3DE0-0F0F-44D3-864B-842CF691E4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CE3DE0-0F0F-44D3-864B-842CF691E4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CE3DE0-0F0F-44D3-864B-842CF691E4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CE3DE0-0F0F-44D3-864B-842CF691E4F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7BEEE4C-1F0F-496C-B838-F21352B521F2} = {1F343359-8D97-4FB6-9BD1-B0CF426AF835}
+	EndGlobalSection
+EndGlobal
